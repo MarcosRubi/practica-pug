@@ -1,0 +1,31 @@
+//- Variables
+- currentPage  = '';
+- siteName = 'Daniel';
+
+-
+    menu  = [
+        {
+            name : 'productos',
+            url : 'producto'
+        },
+        
+        {
+            name : 'Tienda de mercancía',
+            url : 'mercancia'
+        },
+        {
+            name : 'Acerca De',
+            url : 'acerca-de'
+        },
+        {
+            name : 'Contáctenos',
+            url : 'contacto'
+        }
+    ];
+
+
+//- Mixins
+
+mixin social-icon(url, iClass)
+    a(href=url)
+        i(class=iClass)

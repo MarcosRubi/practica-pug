@@ -1,0 +1,8 @@
+header
+    nav
+        label(for="menu-icon")
+            i(class="fas fa-list")
+        input(type="checkbox" id="menu-icon")
+        ul
+            each item in menu
+                li: a(href=`${item.url}.html`)=`${item.name.toUpperCase()}`
